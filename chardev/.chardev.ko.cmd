@@ -1,0 +1,1 @@
+cmd_/root/kernel_driver/chardev/chardev.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /root/kernel_driver/chardev/chardev.ko /root/kernel_driver/chardev/chardev.o /root/kernel_driver/chardev/chardev.mod.o

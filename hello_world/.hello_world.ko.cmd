@@ -1,0 +1,1 @@
+cmd_/root/kernel_driver/hello_world/hello_world.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /root/kernel_driver/hello_world/hello_world.ko /root/kernel_driver/hello_world/hello_world.o /root/kernel_driver/hello_world/hello_world.mod.o
