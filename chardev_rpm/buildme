@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+#make
+
+if [ -a chrdev_mod.ko ]; then
+    cp chrdev.spec.master chrdev.spec
+    sed -i -e "s|__BUILDHOME__|$PWD|g" chrdev.spec
+    rpmbuild -ba chrdev.spec
+fi

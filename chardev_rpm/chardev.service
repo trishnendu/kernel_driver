@@ -1,0 +1,12 @@
+[Unit]
+Description=chardev.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /opt/chardev/chardev_service.sh start
+ExecStop=/bin/bash /opt/chardev/chardev_service.sh stop
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

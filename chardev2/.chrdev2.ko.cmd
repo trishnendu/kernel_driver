@@ -1,1 +1,1 @@
-cmd_/root/kernel_driver/chardev2/chrdev2.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /root/kernel_driver/chardev2/chrdev2.ko /root/kernel_driver/chardev2/chrdev2.o /root/kernel_driver/chardev2/chrdev2.mod.o
+cmd_/home/abc/src/kernel_driver/chardev2/chrdev2.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/abc/src/kernel_driver/chardev2/chrdev2.ko /home/abc/src/kernel_driver/chardev2/chrdev2.o /home/abc/src/kernel_driver/chardev2/chrdev2.mod.o;  true
